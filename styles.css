@@ -1,0 +1,86 @@
+body, html {
+    height: 100%;
+    margin:0;
+    background-color: rgb(9, 0, 22);
+    font-family: "Pixelify Sans", serif;
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.welcome_text {
+    width: 90%;
+    color: rgb(234, 0, 255);
+    text-align: center;
+    font-weight: 600;
+    font-size: 300%;
+    background-color: transparent;
+}
+
+.header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header h1 {
+    color: rgb(153, 0, 255);
+    font-size: 40px;
+}
+
+.header p {
+    color: rgba(255, 255, 255, 0.733);
+    font-size: 30px;
+    margin-top: -20px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.button {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    border: 0;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    color: white;
+    bottom: 0vh;
+}
+
+.button:hover {
+    cursor: pointer;
+    width: 60px;
+    transition: 0.1s;
+}
+
+/* .pan_flag {
+    width: 30px;
+    border-radius: 4px;
+    margin-right: 10px;
+} */
+
+/* .about_me .pan {
+    color: white;
+    font-size: 30px;
+    background-image: url(img/pansex_flag.jpg);
+    background-size: 20px;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: -20px;
+} */
