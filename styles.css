@@ -3,6 +3,14 @@ body, html {
     margin:0;
     background-color: rgb(9, 0, 22);
     font-family: "Pixelify Sans", serif;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
 }
 
 .avatar {
@@ -67,37 +75,13 @@ body, html {
 }
 
 .footer {
-    position: absolute;
     text-align: center;
     width: 100%;
     color: white;
-    bottom: 0;
 }
-
-@media only screen and (max-width: 1200px) {
-    .footer {
-        display: none;
-    }
-  }
 
 .button:hover {
     cursor: pointer;
     width: 50px;
     transition: 0.1s;
 }
-
-/* .pan_flag {
-    width: 30px;
-    border-radius: 4px;
-    margin-right: 10px;
-} */
-
-/* .about_me .pan {
-    color: white;
-    font-size: 30px;
-    background-image: url(img/pansex_flag.jpg);
-    background-size: 20px;
-    -webkit-background-clip: text;
-    color: transparent;
-    margin-top: -20px;
-} */
