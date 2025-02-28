@@ -5,63 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://rhosting.s3.eu-central-1.amazonaws.com/0/fc9b9a7b-bf0a-434f-b9b4-b846a2049275">
+    <meta name="twitter:image"
+        content="https://rhosting.s3.eu-central-1.amazonaws.com/0/fc9b9a7b-bf0a-434f-b9b4-b846a2049275">
     <title>Testing site</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     </style>
     <style>
-        body {
-            background-color: black;
-            display: flex;
-            flex-direction: column;
-            font-family: "Montserrat", seruf;
-        }
-
-        .image_loader {
-            text-align: center;
-            width: 75%;
+        body,
+        html {
             margin: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .image_loader img {
-            max-width: 100%;
-            border: 4px solid purple;
-            border-radius: 10px;
-        }
-
-        .footer {
-            color: white;
-            text-align: center;
+            padding: 0;
+            height: 100%;
             width: 100%;
+            background-color: black;
         }
 
-        footer {
-            align-items: center;
+        iframe {
             width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-
-        .footer_text {
-            color: white;
-            bottom: 0;
-            position: absolute;
-            font-weight: bold;
+            height: 100%;
+            border: none;
+            margin-left: auto;
         }
     </style>
 </head>
 
 <body>
-    <div class="main">
-        <div class="image_loader"">
-            <img src="https://rhosting.s3.eu-central-1.amazonaws.com/0/fc9b9a7b-bf0a-434f-b9b4-b846a2049275" alt="Embedded Image">
-        </div>
-    </div>
+    <iframe src="https://rhosting.s3.eu-central-1.amazonaws.com/0/f457b6f5-ff25-4351-aec0-2c94679c535a"></iframe>
 </body>
 
 </html>
