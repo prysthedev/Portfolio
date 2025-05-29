@@ -1,7 +1,8 @@
 body, html {
     height: fit-content;
     margin:0;
-    background-color: rgb(9, 0, 22);
+    background: radial-gradient(#130022, #00000075);
+    background-color: rgb(7, 0, 11);
     font-family: "Pixelify Sans", serif;
     position: relative;
     height: 100%;
@@ -14,15 +15,27 @@ body, html {
 }
 
 .avatar {
-    width: 200px;
+    display: flex;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .avatar img {
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
-    border: 5px solid rgb(234, 0, 255);
+    border: 5px rgba(162, 0, 255, 0.562) solid;
+}
+
+.fruity {
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;   
+    background-image: url(img/pansex_flag.jpg);
+    background-position: center;
+    background-size: 30px;
 }
 
 .welcome {
@@ -40,6 +53,26 @@ body, html {
     background-color: transparent;
 }
 
+.container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    background-color: black;
+    padding: 50px;
+    height: fit-content;
+    width: 50%;
+    border-radius: 25px;
+    border: 1px rgba(162, 0, 255, 0.192) solid;
+    -webkit-box-shadow:0px 0px 22px 1px rgba(90,0,163,0.33);
+    -moz-box-shadow: 0px 0px 22px 1px rgba(90,0,163,0.33);
+    box-shadow: 0px 0px 22px 1px rgba(90,0,163,0.33);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
 .header {
     text-align: center;
     display: flex;
@@ -50,15 +83,14 @@ body, html {
 .header h1 {
     color: rgb(153, 0, 255);
     font-size: 40px;
+    margin-top: 0px;
 }
 
 .header p {
     color: rgba(255, 255, 255, 0.733);
     font-size: 30px;
     margin-top: -20px;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 10px;
 }
 
 .socials {
@@ -84,4 +116,67 @@ body, html {
     cursor: pointer;
     width: 50px;
     transition: 0.1s;
+}
+
+.experience {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.experience h1 {
+    color: rgb(153, 0, 255);
+    font-size: 40px;
+}
+
+.languageLogo {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    align-self: center;
+    margin-right: 30px;
+}
+
+.experienceBox {
+    display: flex;
+    align-self: center;
+    background-color: black;
+    padding: 30px;
+    height: 100px;
+    width: 350px;
+    border-radius: 25px;
+    border: 1px rgba(162, 0, 255, 0.192) solid;
+    -webkit-box-shadow:0px 0px 22px 1px rgba(90,0,163,0.33);
+    -moz-box-shadow: 0px 0px 22px 1px rgba(90,0,163,0.33);
+    box-shadow: 0px 0px 22px 1px rgba(90,0,163,0.33);
+}
+
+.experienceText {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-self: center;
+}
+
+.experienceBox h3 {
+    color: white;
+    font-size: 23px;
+}
+
+.experienceBox h4 {
+    color: rgba(255, 255, 255, 0.644);
+    font-size: 17px;
+    margin-top: -10px;
+}
+
+.experienceBoxContainer {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
