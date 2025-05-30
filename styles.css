@@ -16,6 +16,7 @@ body, html {
     align-self: center;
     justify-content: center;
     align-items: center;
+    justify-self: center;
 }
 
 .avatar {
