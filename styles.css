@@ -131,8 +131,8 @@ body, html {
     margin-bottom: 50px;
     width: 90%;
     justify-self: center;
+    align-items: center;
     position: relative;
-    align-self: center;
 }
 
 .experience h1 {
