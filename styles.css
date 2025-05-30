@@ -57,8 +57,6 @@ body, html {
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
-    align-self: center;
-    justify-self: center;
     background-color: black;
     padding: 50px;
     height: fit-content;
@@ -71,8 +69,8 @@ body, html {
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin-left: 50%;
-    margin-right: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header {
@@ -126,6 +124,8 @@ body, html {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 50px;
+    width: 90%;
+    justify-self: center;
 }
 
 .experience h1 {
@@ -147,7 +147,7 @@ body, html {
     background-color: black;
     padding: 30px;
     height: 100px;
-    width: 350px;
+    width: 300px;
     border-radius: 25px;
     border: 1px rgba(162, 0, 255, 0.192) solid;
     -webkit-box-shadow:0px 0px 22px 1px rgba(90,0,163,0.33);
