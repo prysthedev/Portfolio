@@ -223,8 +223,8 @@ body, html {
 }
 
 .loadingCircle1 {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
     border-radius: 100%;
     background-color: rgb(140, 0, 255);
     animation-duration: 0.25s;
@@ -232,8 +232,8 @@ body, html {
 }
 
 .loadingCircle2 {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
     border-radius: 100%;
     background-color: rgb(140, 0, 255);
     animation-duration: 0.25s;
@@ -242,8 +242,8 @@ body, html {
 }
 
 .loadingCircle3 {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
     border-radius: 100%;
     background-color: rgb(140, 0, 255);
     animation-duration: 0.25s;
@@ -265,4 +265,35 @@ body, html {
     animation-delay: 0.6s;
     animation-fill-mode: forwards;
     position: fixed;
+}
+
+@media only screen and (max-width: 600px) {
+    .loadingCircle1 {
+    width: 17px;
+    height: 17px;
+    border-radius: 100%;
+    background-color: rgb(140, 0, 255);
+    animation-duration: 0.25s;
+    animation-name: circleAnimation;
+}
+
+.loadingCircle2 {
+    width: 17px;
+    height: 17px;
+    border-radius: 100%;
+    background-color: rgb(140, 0, 255);
+    animation-duration: 0.25s;
+    animation-name: circleAnimation;
+    animation-delay: 0.25s;
+}
+
+.loadingCircle3 {
+    width: 17px;
+    height: 17px;
+    border-radius: 100%;
+    background-color: rgb(140, 0, 255);
+    animation-duration: 0.25s;
+    animation-name: circleAnimation;
+    animation-delay: 0.5s;
+}
 }
