@@ -1,7 +1,8 @@
 body, html {
     height: fit-content;
     margin:0;
-    background-color: rgb(9, 0, 22);
+    background: radial-gradient(#130022, #00000075);
+    background-color: rgb(7, 0, 11);
     font-family: "Pixelify Sans", serif;
     position: relative;
     height: 100%;
@@ -11,18 +12,34 @@ body, html {
 
 .main {
     flex: 1;
+    width: 100%;
+    align-self: center;
+    align-items: center;
+    justify-self: center;
 }
 
 .avatar {
-    width: 200px;
+    display: flex;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .avatar img {
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
-    border: 5px solid rgb(234, 0, 255);
+    border: 5px rgba(162, 0, 255, 0.562) solid;
+}
+
+.fruity {
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;   
+    background-image: url(img/pansex_flag.jpg);
+    background-position: center;
+    background-size: 30px;
 }
 
 .welcome {
@@ -36,8 +53,27 @@ body, html {
     color: rgb(234, 0, 255);
     text-align: center;
     font-weight: 600;
-    font-size: 300%;
+    font-size: 200%;
     background-color: transparent;
+}
+
+.container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    background-color: black;
+    padding: 40px;
+    height: fit-content;
+    width: 50%;
+    border-radius: 25px;
+    border: 1px rgba(162, 0, 255, 0.192) solid;
+    box-shadow: 0px 0px 22px 1px rgba(90,0,163,0.33);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header {
@@ -49,16 +85,15 @@ body, html {
 
 .header h1 {
     color: rgb(153, 0, 255);
-    font-size: 40px;
+    font-size: 35px;
+    margin-top: 0px;
 }
 
 .header p {
     color: rgba(255, 255, 255, 0.733);
-    font-size: 30px;
+    font-size: 20px;
     margin-top: -20px;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 10px;
 }
 
 .socials {
@@ -78,10 +113,187 @@ body, html {
     text-align: center;
     width: 100%;
     color: white;
+    margin-top: 30px;
 }
 
 .button:hover {
     cursor: pointer;
     width: 50px;
     transition: 0.1s;
+}
+
+.experience {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 100%;
+    justify-self: center;
+    align-items: center;
+    position: relative;
+    align-self: center;
+}
+
+.experience h1 {
+    color: rgb(153, 0, 255);
+    font-size: 35px;
+}
+
+.languageLogo {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    align-self: center;
+    margin-right: 30px;
+}
+
+.experienceBox {
+    display: flex;
+    align-self: center;
+    background-color: black;
+    padding: 30px;
+    height: 75px;
+    width: 250px;
+    border-radius: 25px;
+    border: 1px rgba(162, 0, 255, 0.192) solid;
+    -webkit-box-shadow:0px 0px 22px 1px rgba(90,0,163,0.33);
+    -moz-box-shadow: 0px 0px 22px 1px rgba(90,0,163,0.33);
+    box-shadow: 0px 0px 22px 1px rgba(90,0,163,0.33);
+}
+
+.experienceText {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-self: center;
+}
+
+.experienceBox h3 {
+    color: white;
+    font-size: 19px;
+}
+
+.experienceBox h4 {
+    color: rgba(255, 255, 255, 0.644);
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+.experienceBoxContainer {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadingCircleContainer {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-self: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 30px;
+}
+
+@keyframes circleAnimation {
+    0% {
+        margin-top: 0px;
+    }
+
+    50% {
+        margin-top: -75px;
+    }
+
+    100% {
+        margin-top: 0px;
+    }
+}
+
+@keyframes overlayBackground {
+    to {
+        backdrop-filter: blur(0px);
+        opacity: 0;
+    }
+}
+
+.loadingCircle1 {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: rgb(140, 0, 255);
+    animation-duration: 0.25s;
+    animation-name: circleAnimation;
+}
+
+.loadingCircle2 {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: rgb(140, 0, 255);
+    animation-duration: 0.25s;
+    animation-name: circleAnimation;
+    animation-delay: 0.25s;
+}
+
+.loadingCircle3 {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: rgb(140, 0, 255);
+    animation-duration: 0.25s;
+    animation-name: circleAnimation;
+    animation-delay: 0.5s;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation-name: overlayBackground;
+    animation-duration: 1s;
+    background: transparent;
+    pointer-events: none;
+    display: flex;
+    backdrop-filter: blur(40px);
+    opacity: 1;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+    position: fixed;
+}
+
+@media only screen and (max-width: 600px) {
+    .loadingCircle1 {
+    width: 17px;
+    height: 17px;
+    border-radius: 100%;
+    background-color: rgb(140, 0, 255);
+    animation-duration: 0.25s;
+    animation-name: circleAnimation;
+}
+
+.loadingCircle2 {
+    width: 17px;
+    height: 17px;
+    border-radius: 100%;
+    background-color: rgb(140, 0, 255);
+    animation-duration: 0.25s;
+    animation-name: circleAnimation;
+    animation-delay: 0.25s;
+}
+
+.loadingCircle3 {
+    width: 17px;
+    height: 17px;
+    border-radius: 100%;
+    background-color: rgb(140, 0, 255);
+    animation-duration: 0.25s;
+    animation-name: circleAnimation;
+    animation-delay: 0.5s;
+}
 }
