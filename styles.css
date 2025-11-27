@@ -301,3 +301,68 @@ body, html {
     animation-delay: 0.5s;
 }
 }
+
+.poemButtonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: -15px;
+}
+
+.poemButton {
+    color: rgb(140, 0, 255);
+}
+
+.buttonContainer {
+    width: 100%;
+}
+
+@keyframes poemButtonAnimation {
+    0% {
+        opacity: 50;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 50;
+    }
+}
+
+.poemButton2 {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    position: fixed;
+    text-align: right;
+    top: 20px;
+    right: 20px;
+    animation-name: poemButtonAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.poem {
+    color: white;
+    font-size: 18px;
+}
+
+.poemContainer {
+    display: flex;
+    text-align: center;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.back {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    position: fixed;
+    text-align: right;
+    top: 20px;
+    left: 20px;
+}
