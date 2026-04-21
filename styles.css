@@ -184,6 +184,22 @@ body, html {
     margin-top: -10px;
 }
 
+.experienceBox:hover {
+    height: 64px;
+    width: 200px;
+    transition: 0.1s;
+}
+
+.experienceBox:hover h3 {
+    font-size: 18px;
+    transition: 0.1s;
+}
+
+.experienceBox:hover h4 {
+    font-size: 14px;
+    transition: 0.1s;
+}
+
 .experienceBoxContainer {
     display: flex;
     flex-direction: row;
